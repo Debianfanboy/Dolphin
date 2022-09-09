@@ -65,6 +65,15 @@ with AudioFile('audio.wav', 'r') as f:
 board = Pedalboard([])
 
 print("")
+print("Would you like to use a preset?")
+answer = input("(y/n) >>> ")
+if answer == "y":
+    print("----- Presets -----")
+    print("[1] Weird ")
+    print("[2] Loud")
+    print("[3] High pitched")
+    print("[4] Low pitched")
+    mode = int(input())
 print("You are going to enter edit mode. Select what effects you would like to add")
 
 while 1:
